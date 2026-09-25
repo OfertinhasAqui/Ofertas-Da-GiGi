@@ -37,7 +37,7 @@
     min-height:100vh;
     display:flex;
     justify-content:center;
-    padding: 48px 18px 64px;
+    padding: 32px 10px 48px;
   }
 
   .page{
@@ -51,12 +51,12 @@
     flex-direction:column;
     align-items:center;
     text-align:center;
-    margin-bottom: 38px;
+    margin-bottom: 24px;
   }
 
   .logo{
-    width: 118px;
-    height: 118px;
+    width: 92px;
+    height: 92px;
     border-radius:50%;
     object-fit:cover;
     border: 3px solid var(--coral);
@@ -66,9 +66,9 @@
   .brand{
     font-family:'Caveat', cursive;
     font-weight:700;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height:1;
-    margin: 18px 0 2px;
+    margin: 14px 0 2px;
     color: var(--cream);
   }
 
@@ -118,12 +118,37 @@
   .offers{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
+    gap: 10px;
   }
 
   @media (max-width: 420px){
     .offers{
-      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    .offer-body{
+      padding: 8px 9px 10px;
+    }
+    .offer-title{
+      font-size: 0.74rem;
+      min-height: 2.1em;
+      margin: 0 0 5px;
+    }
+    .price-old{
+      font-size: 0.66rem;
+    }
+    .price-new{
+      font-size: 0.92rem;
+    }
+    .price-unit{
+      font-size: 0.6rem;
+    }
+    .price-row{
+      gap:5px;
+      margin-bottom: 8px;
+    }
+    .cta{
+      font-size: 0.68rem;
+      padding: 7px 8px;
     }
   }
 
@@ -307,4 +332,3 @@
 
 </body>
 </html>
-
